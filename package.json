@@ -1,0 +1,22 @@
+{
+  "name": "frontend-four",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IyanTheekshana/frontend-four.git"
+  },
+  "author": "Iyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IyanTheekshana/frontend-four/issues"
+  },
+  "homepage": "https://github.com/IyanTheekshana/frontend-four#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
