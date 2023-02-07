@@ -1,0 +1,13 @@
+$font-stack: "Roboto", sans-serif;
+
+$font-light: 300;
+$font-normal: 400;
+$font-bold: 700;
+$font-black: 900;
+
+//Font mixins
+
+@mixin font($font-family, $font-weight) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+}
