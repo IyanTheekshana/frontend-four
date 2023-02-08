@@ -33,11 +33,14 @@ img {
 
 .lg-screen {
   display: none; }
+  @media only screen and (min-width: 725px) {
+    .lg-screen {
+      display: block; } }
 
 .bg-primary {
   background: #048ca8;
   color: white;
-  padding: 2.5em; }
+  padding: 7em 2.5em 5em 2.5em; }
 
 h1,
 h2,
@@ -94,6 +97,9 @@ h2 {
   @media only screen and (min-width: 500px) {
     .title-box {
       transform: translateY(50%); } }
+  @media only screen and (min-width: 725px) {
+    .title-box {
+      max-width: 700px; } }
 
 .title-footer {
   text-transform: uppercase;
@@ -148,6 +154,14 @@ h2 {
   flex: 0 0 100%; }
   .col--full {
     flex: 0 0 100%; }
+
+@media only screen and (min-width: 725px) {
+  .col--1-3 {
+    flex-basis: 33.33%; }
+  .col--2-3 {
+    flex-basis: 66.6666%; }
+  .col--1-2 {
+    flex-basis: 50%; } }
 
 .main-nav {
   background: linear-gradient(to right bottom, #d31869, #16db93);
@@ -234,6 +248,16 @@ h2 {
   padding-top: 8em;
   padding-bottom: 8em;
   text-align: center; }
+  @media only screen and (min-width: 725px) {
+    .hero {
+      text-align: left;
+      padding-bottom: 0;
+      height: 85vmin;
+      min-height: 800px; } }
+
+@media only screen and (min-width: 725px) {
+  .hero-text {
+    margin-top: 10vmax; } }
 
 .sales-points {
   padding: 10vh 0 0; }
@@ -244,13 +268,29 @@ h2 {
 .sales-point:first-of-type {
   margin-top: 1.5em; }
 
+@media only screen and (min-width: 725px) {
+  .sales-point:first-of-type {
+    margin-top: 0; } }
+
+.promo .bg-primary {
+  text-align: left;
+  padding-left: 7%;
+  padding-top: 7.5em;
+  padding-bottom: 7.5em; }
+
+.img-box {
+  background-image: url("../../img/phone-in-hand.jpg");
+  background-size: cover;
+  background-position: center; }
+
 footer {
   background: #444444;
   color: white;
   padding: 5em 2em;
   position: relative; }
   footer.container {
-    width: 100%; }
+    width: 100%;
+    min-width: 100%; }
   footer a {
     color: white; }
   footer::before {

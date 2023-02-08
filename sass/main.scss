@@ -1,6 +1,7 @@
 @import "abstracts/colors";
 @import "abstracts/type";
 @import "vendor/normalize";
+
 @import "base/base";
 @import "base/type";
 
@@ -9,10 +10,8 @@
 
 @import "layout/grid";
 @import "layout/nav";
-
 @import "layout/header";
 @import "layout/hero";
-
 @import "layout/sales-points";
 @import "layout/promo";
 @import "layout/footer";
