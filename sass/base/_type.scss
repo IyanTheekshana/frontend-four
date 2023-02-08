@@ -17,11 +17,16 @@ p:last-child {
   margin: 0;
 }
 
+p {
+  margin-block-start: 0;
+}
+
 h1 {
   font-size: 2rem;
   font-weight: $font-light;
   line-height: 1.15;
   text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 h2 {
@@ -35,6 +40,7 @@ h2 {
   font-size: 3rem;
   font-weight: $font-black;
 
+  line-height: 0.9;
   span {
     font-weight: $font-light;
   }
@@ -42,4 +48,38 @@ h2 {
 
 .text-intro {
   font-size: 1.2rem;
+}
+
+.title-box {
+  background: $accent;
+  color: $text-inverse;
+  margin: 0 auto;
+  padding: 2em;
+  transform: translateY(30%);
+  max-width: 90%;
+
+  & + .bg-primary {
+    padding-top: 7em;
+  }
+
+  @media only screen and (min-width: 500px) {
+    transform: translateY(50%);
+  }
+}
+
+.title-footer {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1;
+  color: $text-inverse;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: $text-inverse;
+    opacity: 0.5;
+    margin: 0.5em 0;
+  }
 }

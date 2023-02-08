@@ -14,7 +14,8 @@ body {
   box-sizing: border-box; }
 
 body {
-  color: #048ca8; }
+  color: #048ca8;
+  text-align: center; }
 
 img {
   max-width: 100%;
@@ -29,6 +30,14 @@ img {
   margin: 0;
   padding: 0;
   list-style: none; }
+
+.lg-screen {
+  display: none; }
+
+.bg-primary {
+  background: #048ca8;
+  color: white;
+  padding: 2.5em; }
 
 h1,
 h2,
@@ -47,11 +56,15 @@ h6:last-child,
 p:last-child {
   margin: 0; }
 
+p {
+  margin-block-start: 0; }
+
 h1 {
   font-size: 2rem;
   font-weight: 300;
   line-height: 1.15;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 3px; }
 
 h2 {
   font-size: 1.2rem;
@@ -61,12 +74,39 @@ h2 {
 
 .title-large {
   font-size: 3rem;
-  font-weight: 900; }
+  font-weight: 900;
+  line-height: 0.9; }
   .title-large span {
     font-weight: 300; }
 
 .text-intro {
   font-size: 1.2rem; }
+
+.title-box {
+  background: #d31869;
+  color: white;
+  margin: 0 auto;
+  padding: 2em;
+  transform: translateY(30%);
+  max-width: 90%; }
+  .title-box + .bg-primary {
+    padding-top: 7em; }
+  @media only screen and (min-width: 500px) {
+    .title-box {
+      transform: translateY(50%); } }
+
+.title-footer {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1;
+  color: white; }
+  .title-footer::before, .title-footer::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: white;
+    opacity: 0.5;
+    margin: 0.5em 0; }
 
 .btn {
   display: inline-block;
@@ -91,8 +131,23 @@ h2 {
     background: white;
     color: #d31869; }
 
+.cta {
+  background-color: #16db93;
+  background-image: url("../../img/call-to-action-background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5em 0 5em 0;
+  background-blend-mode: multiply;
+  color: white; }
+
 .grid {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
+
+.col {
+  flex: 0 0 100%; }
+  .col--full {
+    flex: 0 0 100%; }
 
 .main-nav {
   background: linear-gradient(to right bottom, #d31869, #16db93);
@@ -180,5 +235,50 @@ h2 {
   padding-bottom: 8em;
   text-align: center; }
 
-.hero-img {
-  display: none; }
+.sales-points {
+  padding: 10vh 0 0; }
+
+.sales-point:not(:last-child) {
+  margin-bottom: 3.5em; }
+
+.sales-point:first-of-type {
+  margin-top: 1.5em; }
+
+footer {
+  background: #444444;
+  color: white;
+  padding: 5em 2em;
+  position: relative; }
+  footer.container {
+    width: 100%; }
+  footer a {
+    color: white; }
+  footer::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url("../../img/logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 0.1; }
+
+.social-links {
+  display: flex;
+  font-size: 3rem;
+  justify-content: space-around;
+  opacity: 0.8;
+  margin: 0.8em 0; }
+
+.nav-footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto; }
+  .nav-footer a {
+    text-decoration: none;
+    font-weight: 700; }
